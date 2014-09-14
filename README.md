@@ -16,7 +16,7 @@ it is not intended to be a practical thread library.
 
 Type
 
-		make depends ; make
+		touch dependencies ; make depends ; make
 
 to build the library and example, then type
 
