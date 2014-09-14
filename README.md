@@ -36,3 +36,6 @@ to run the example.  The output should look like
 
 I dunno.  It runs on Debian testing and FreeBSD 10 and assumes the GNU tool
 chain, a C compiler in particular.
+
+If you want a copy of this file as html, you should install a markdown
+processor.
