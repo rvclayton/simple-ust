@@ -21,9 +21,9 @@
 
         thread_fun f;
 
-     /* Parameters passed into f() when the thread calls f(). */
+     /* Parameters passed into f() by the thread when it calls f(). */
 
-     void * params;
+        void * params;
 
      } thread_descriptor;
 
