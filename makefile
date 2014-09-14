@@ -6,7 +6,7 @@ ex	: $(objs)
 	  $(CC) -o $@ $(CFLAGS) $(objs)
 
 clean	:
-	  crm ; rm -f *.o ex
+	  crm ; rm -f *.o ex README.html dependencies
 
 depends	:
 	  $(CC) -MM $(iflags) *.c | \
