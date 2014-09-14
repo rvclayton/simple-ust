@@ -1,8 +1,9 @@
 CC	= gcc
 CFLAGS	= -g -Wall -pedantic -ansi
 
-ex	: ex.o td.o ust.o
-	  $(CC) -o $@ $(CFLAGS) $^
+objs	= ex.o td.o ust.o
+ex	: $(objs)
+	  $(CC) -o $@ $(CFLAGS) $(objs)
 
 clean	:
 	  crm ; rm -f *.o ex
