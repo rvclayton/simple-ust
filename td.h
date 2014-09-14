@@ -9,15 +9,22 @@
    typedef void (* thread_fun)(void *);
 
 
-/* What a thread descriptor is.  This is a stupid design because it has all
-   those fields hanging out in the breeze, but it gets the job done with a
-   minimum of fuss. */
+/* What a thread descriptor is. */
 
    typedef struct thread_descriptor {
-     jmp_buf env;
-     thread_fun f;
+
+     /* The thread state. */
+
+        jmp_buf env;
+
+     /* The function providing the code the thread runs. */
+
+        thread_fun f;
+
+     /* Parameters passed into f() when the thread calls f(). */
+
      void * params;
-     struct thread_descriptor * next, * prev;
+
      } thread_descriptor;
 
 
