@@ -7,7 +7,9 @@
 
    static void
    f(void * param) {
+
      printf("%s.\n", (const char * const) param);
+
      ust_exit();
      }
 
@@ -17,23 +19,11 @@ main() {
 
   ust_init();
 
-  if (1) {
-    ust_create(f, (void *) "red");
-    ust_create(f, (void *) "blue");
-    ust_create(f, (void *) "white");
+  ust_create(f, (void *) "red");
+  ust_create(f, (void *) "blue");
+  ust_create(f, (void *) "white");
 
-    printf("Go!\n");
-    }
-  else {
-    thread_descriptor
-      * td1 = td_new(),
-      * td2 = td_new(),
-      * td3 = td_new();
-
-    td_free(td1);
-    td_free(td2);
-    td_free(td3);
-    }
+  printf("Go!\n");
 
   ust_exit();
 
