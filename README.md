@@ -39,3 +39,11 @@ chain, a C compiler in particular.
 
 If you want a copy of this file as html, you should install a markdown
 processor.
+
+## References
+
+Chapters 4 (Exceptions and Assertions) and 20 (Threads) in
+[<i>C Interfaces and Implementations</i>](https://openlibrary.org/books/OL990468M/C_interfaces_and_implementations)
+by David Hanson, Addison-Wesley, 1997.
+
+
